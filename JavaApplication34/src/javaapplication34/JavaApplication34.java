@@ -21,7 +21,9 @@ public class JavaApplication34 {
         do{
             System.out.println("dime el tamaño del array maximo 10");
             tamaño=sc.nextInt();
+
         }while(tamañoCorrecto(tamaño)==true);
+
         
         int[] numeros=new int[tamaño];
         
