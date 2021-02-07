@@ -22,7 +22,9 @@ public class JavaApplication34 {
             System.out.println("dime el tamaño del array maximo 10");
             tamaño=sc.nextInt();
         }while(tamañoCorrecto(tamaño)==true);
+        
         int[] numeros=new int[tamaño];
+        
         for (int i=0;i<numeros.length;i++){
             System.out.println("dime un numero");
             num=sc.nextInt();
