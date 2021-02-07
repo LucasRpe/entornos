@@ -24,6 +24,7 @@ public class JavaApplication34 {
         }while(tamañoCorrecto(tamaño)==false);
         
         int[] numeros=new int[tamaño];
+        
         for (int i=0;i<numeros.length;i++){
             System.out.println("dime un numero");
             num=sc.nextInt();
