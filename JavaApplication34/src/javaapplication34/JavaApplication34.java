@@ -21,7 +21,7 @@ public class JavaApplication34 {
         do{
             System.out.println("dime el tamaño del array maximo 10");
             tamaño=sc.nextInt();
-        }while(tamaño<=10);
+        }while(tamañoCorrecto(tamaño)==false);
         int[] numeros=new int[tamaño];
         for (int i=0;i<numeros.length;i++){
             System.out.println("dime un numero");
@@ -45,5 +45,12 @@ public class JavaApplication34 {
                 repetido=true;
         }
         return repetido;
+    }
+    public static boolean tamañoCorrecto(int tamaño){
+        boolean limite=false;
+        if ((tamaño <= 10) && (tamaño > 0)){
+            limite=true;
+        }
+       return limite;
     }
 }
