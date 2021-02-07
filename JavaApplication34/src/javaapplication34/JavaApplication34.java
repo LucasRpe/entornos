@@ -18,9 +18,15 @@ public class JavaApplication34 {
         // TODO code application logic here
         Scanner sc=new Scanner(System.in);
         int[] numeros=new int[10];
+        int num;
         for (int i=0;i<numeros.length;i++){
             System.out.println("dime un numero");
-            numeros[i]=sc.nextInt();
+            num=sc.nextInt();
+            if (repetidos(numeros,num)==true){
+                numeros[i]=num;
+            }else{
+                System.out.println("numero repetido");
+            }
         }
         Arrays.sort(numeros);
         for (int i=0;i<numeros.length;i++){
@@ -28,5 +34,12 @@ public class JavaApplication34 {
         }
         
     }
-    
+    public static boolean repetidos(int[] numeros,int num){
+        boolean repetido=false;
+        for (int i=0;i<numeros.length;i++){
+            if (numeros[i]==num)
+                repetido=true;
+        }
+        return repetido;
+    }
 }
