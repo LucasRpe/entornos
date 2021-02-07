@@ -17,8 +17,12 @@ public class JavaApplication34 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner sc=new Scanner(System.in);
-        int[] numeros=new int[10];
-        int num;
+        int num,tamaño=0;
+        do{
+            System.out.println("dime el tamaño del array maximo 10");
+            tamaño=sc.nextInt();
+        }while(tamaño<=10);
+        int[] numeros=new int[tamaño];
         for (int i=0;i<numeros.length;i++){
             System.out.println("dime un numero");
             num=sc.nextInt();
